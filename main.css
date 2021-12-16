@@ -1,0 +1,68 @@
+/* css for body elements*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    margin: 0;
+    color: grey;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h5 {
+    font-weight: inherit;
+}
+
+/* css for class elements */
+.container {
+    display: flex; /* defaults to row. splits the content alongside each other */
+    justify-content: space-evenly; /* indents on margins and spaces each column of content */
+    margin: 3em 0;
+}
+
+.name-title p {
+    padding-left: 3em;
+}
+
+.contact ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact ul li {
+    padding: 1em;
+}
+
+/* all content on the right side begins here*/
+
+.development-projects {
+    width: 500px;
+}
+
+.project-row {
+    display: flex;
+    align-items: baseline; /* aligns the project name and date to the same line*/
+    justify-content: space-between; /* separates the project name and date*/
+}
+
+/* projects above and experience below*/
+
+.experience {
+    width: 500px;
+}
+
+.academic-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
