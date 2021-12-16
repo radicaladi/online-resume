@@ -22,7 +22,10 @@ h5 {
     font-weight: inherit;
 }
 
-/* css for class elements */
+/* css for class elements begins here */
+
+/* all content on the left side */
+
 .container {
     display: flex; /* defaults to row. splits the content alongside each other */
     justify-content: space-evenly; /* indents on margins and spaces each column of content */
@@ -30,8 +33,11 @@ h5 {
 }
 
 .name-title p {
-    padding-left: 3em;
+    padding-left: 2em; /* aligns profession title to the name */
 }
+
+
+/*contact container styling here*/
 
 .contact ul {
     display: flex;
@@ -40,22 +46,10 @@ h5 {
 }
 
 .contact ul li {
-    padding: 1em;
+    padding-right: 1em;
 }
 
-/* all content on the right side begins here*/
-
-.development-projects {
-    width: 500px;
-}
-
-.project-row {
-    display: flex;
-    align-items: baseline; /* aligns the project name and date to the same line*/
-    justify-content: space-between; /* separates the project name and date*/
-}
-
-/* projects above and experience below*/
+/* experience container and the child elements*/
 
 .experience {
     width: 500px;
@@ -65,4 +59,33 @@ h5 {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+}
+
+/* all content on the right side begins here */
+
+/*skill container and the child elements-*/
+
+.skills {
+    width: 500px;
+}
+
+.skill-card {
+    display: flex;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*development projects container and the child elements*/
+
+.development-projects {
+    width: 500px;
+}
+
+.project-row {
+    display: flex;
+    align-items: baseline; /* aligns the project name and date to the same line*/
+    justify-content: space-between; /* separates the project name and date*/
 }
