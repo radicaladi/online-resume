@@ -24,18 +24,17 @@ h5 {
 
 /* css for class elements begins here */
 
-/* all content on the left side */
-
 .container {
     display: flex; /* defaults to row. splits the content alongside each other */
     justify-content: space-evenly; /* indents on margins and spaces each column of content */
     margin: 3em 0;
 }
 
+/* all content on the left side */
+
 .name-title p {
     padding-left: 2em; /* aligns profession title to the name */
 }
-
 
 /*contact container styling here*/
 
@@ -48,26 +47,6 @@ h5 {
 .contact ul li {
     padding-right: 1em;
 }
-
-/* experience container and the child elements*/
-
-.experience {
-    width: 500px;
-}
-
-.academic-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.professional-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-/* all content on the right side begins here */
 
 /*skill container and the child elements-*/
 
@@ -94,4 +73,43 @@ h5 {
     display: flex;
     align-items: baseline; /* aligns the project name and date to the same line*/
     justify-content: space-between; /* separates the project name and date*/
+}
+
+/* all content on the right side begins here */
+
+.experience {
+    width: 500px;
+}
+
+/* academic and professional elements below */
+
+.academic-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.professional-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/*Media query section... placed at bottom because media query is effecting the page after desktop styling is applied....*/
+
+@media screen and (max-width: 800px) {
+    body {
+        text-align: center;
+    }
+    .name-title > p {
+        padding: 0;
+    }
+    .contact ul {
+        padding-left: 100px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
 }
