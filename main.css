@@ -97,7 +97,7 @@ h5 {
 
 /*Media query section... placed at bottom because media query is effecting the page after desktop styling is applied....*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 426px) {
     body {
         text-align: center;
     }
@@ -113,3 +113,23 @@ h5 {
         margin: 0;
     }
 }
+
+/*NOTE: 1040 max width to 801 min width needs padding white space between the two sides... smaller laptop viewport...*/
+/*NOTE 2: need to figure out how to scale from tablet to mobile and fix the page layout to fit mobile viewport....*/
+
+/*@media screen and (max-width: 425px) and (min-width: 320px) {*/
+/*    body {*/
+/*        text-align: center;*/
+/*    }*/
+/*    .name-title > p {*/
+/*        padding: 0;*/
+/*    }*/
+/*    .contact ul {*/
+/*        padding-left: 100px;*/
+/*    }*/
+/*    .container {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        margin: 0;*/
+/*    }*/
+/*}*/
