@@ -61,6 +61,12 @@ h5 {
     justify-content: space-between;
 }
 
+.professional-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
 /* all content on the right side begins here */
 
 /*skill container and the child elements-*/
