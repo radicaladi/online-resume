@@ -1,16 +1,8 @@
-/* css for body elements*/
 body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-}
-
-p {
-    margin: 0;
-    color: grey;
 }
 
 h1 {
-    margin: 0;
     font-weight: 700;
 }
 
@@ -22,102 +14,166 @@ h5 {
     font-weight: inherit;
 }
 
-/* css for class elements begins here */
-
-.container {
-    display: flex; /* defaults to row. splits the content alongside each other */
-    justify-content: space-evenly; /* indents on margins and spaces each column of content */
-    margin: 3em 0;
-}
-
-/* all content on the left side */
-
-.name-title p {
-    padding-left: 2em; /* aligns profession title to the name */
-}
-
-/*contact container styling here*/
-
-.contact ul {
-    display: flex;
+li {
     list-style: none;
-    padding-left: 0;
 }
 
-.contact ul li {
-    padding-right: 1em;
-}
+/*mobile device responsive design css follows*/
 
-/*skill container and the child elements-*/
-
-.skills {
-    width: 500px;
-}
-
-.skill-card {
-    display: flex;
-}
-
-.skill-card ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-/*development projects container and the child elements*/
-
-.development-projects {
-    width: 500px;
-}
-
-.project-row {
-    display: flex;
-    align-items: baseline; /* aligns the project name and date to the same line*/
-    justify-content: space-between; /* separates the project name and date*/
-}
-
-/* all content on the right side begins here */
-
-.experience {
-    width: 500px;
-}
-
-/* academic and professional elements below */
-
-.academic-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.professional-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-/*Media query section... placed at bottom because media query is effecting the page after desktop styling is applied....*/
-
-@media screen and (max-width: 800px) and (min-width: 426px) {
-    body {
-        text-align: center;
-    }
-    .name-title > p {
-        padding: 0;
-    }
-    .contact ul {
-        padding-left: 100px;
-    }
+@media screen and (min-width: 320px) and (max-width: 600px) {
     .container {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .left-side, .right-side {
+        text-align: center;
+    }
+    .name-title>h1 {
+        margin-bottom: 0;
+    }
+    .name-title>p {
         margin: 0;
+        color: #808080;
+        font-size: 0.75em;
+    }
+    .contact {
+        background-color: #D8B6A4;
+    }
+    .contact>ul {
+        display: flex;
+    }
+    .contact>ul>li {
+        padding: 0.5em;
+    }
+    .skill-card {
+        display: flex;
+        align-content: center;
+    }
+    .skill-list {
+        margin: 0.5em 0;
+    }
+    .skills-right, .skills-right ul {
+        padding-left: 1em;
+    }
+    .project-row, .professional-row, .academic-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .professional-row, .academic-row > h4{
+        font-size: 14px;
+    }
+    .script {
+        margin: 0;
+    }
+    .honors {
+        margin: 0.5em
     }
 }
 
-/*NOTE: 1040 max width to 801 min width needs padding white space between the two sides... smaller laptop viewport...*/
-/*NOTE 2: need to figure out how to scale from tablet to mobile and fix the page layout to fit mobile viewport....*/
+/*!* css for body elements*!*/
+/*body {*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*    font-weight: 300;*/
+/*}*/
 
-/*@media screen and (max-width: 425px) and (min-width: 320px) {*/
+/*p {*/
+/*    margin: 0;*/
+/*    color: grey;*/
+/*}*/
+
+/*h1 {*/
+/*    margin: 0;*/
+/*    font-weight: 700;*/
+/*}*/
+
+/*h3 {*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*h5 {*/
+/*    font-weight: inherit;*/
+/*}*/
+
+/*!* css for class elements begins here *!*/
+
+/*.container {*/
+/*    display: flex; !* defaults to row. splits the content alongside each other *!*/
+/*    justify-content: space-evenly; !* indents on margins and spaces each column of content *!*/
+/*    margin: 3em 0;*/
+/*}*/
+
+/*!* all content on the left side *!*/
+
+/*.name-title p {*/
+/*    padding-left: 2em; !* aligns profession title to the name *!*/
+/*}*/
+
+/*!*contact container styling here*!*/
+
+/*.contact ul {*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    padding-left: 0;*/
+/*}*/
+
+/*.contact ul li {*/
+/*    padding-right: 1em;*/
+/*}*/
+
+/*!*skill container and the child elements-*!*/
+
+/*.skills {*/
+/*    width: 500px;*/
+/*}*/
+
+/*.skill-card {*/
+/*    display: flex;*/
+/*}*/
+
+/*.skill-card ul {*/
+/*    list-style: none;*/
+/*    padding-left: 0;*/
+/*}*/
+
+/*!*development projects container and the child elements*!*/
+
+/*.development-projects {*/
+/*    width: 500px;*/
+/*}*/
+
+/*.project-row {*/
+/*    display: flex;*/
+/*    align-items: baseline; !* aligns the project name and date to the same line*!*/
+/*    justify-content: space-between; !* separates the project name and date*!*/
+/*}*/
+
+/*!* all content on the right side begins here *!*/
+
+/*.experience {*/
+/*    width: 500px;*/
+/*}*/
+
+/*!* academic and professional elements below *!*/
+
+/*.academic-row {*/
+/*    display: flex;*/
+/*    align-items: baseline;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.professional-row {*/
+/*    display: flex;*/
+/*    align-items: baseline;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*!*Media query section... placed at bottom because media query is effecting the page after desktop styling is applied....*!*/
+
+/*!*NOTE: 1040 max width to 801 min width needs padding white space between the two sides... smaller laptop viewport...*!*/
+
+/*@media screen and (max-width: 800px) and (min-width: 426px) {*/
 /*    body {*/
 /*        text-align: center;*/
 /*    }*/
@@ -133,3 +189,22 @@ h5 {
 /*        margin: 0;*/
 /*    }*/
 /*}*/
+
+/*!*NOTE 2: need to figure out how to scale from tablet to mobile and fix the page layout to fit mobile viewport....*!*/
+
+/*!*@media screen and (max-width: 425px) and (min-width: 320px) {*!*/
+/*!*    body {*!*/
+/*!*        text-align: center;*!*/
+/*!*    }*!*/
+/*!*    .name-title > p {*!*/
+/*!*        padding: 0;*!*/
+/*!*    }*!*/
+/*!*    .contact ul {*!*/
+/*!*        padding-left: 100px;*!*/
+/*!*    }*!*/
+/*!*    .container {*!*/
+/*!*        flex-direction: column;*!*/
+/*!*        align-items: center;*!*/
+/*!*        margin: 0;*!*/
+/*!*    }*!*/
+/*!*}*!*/
