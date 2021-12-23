@@ -118,6 +118,71 @@ li {
     }
 }
 
+/** styling for screens equivalent of ipad to desktop **/
+
+@media screen and (min-width: 601px) and (max-width: 2048px) {
+    .container {
+        display: flex; /* defaults to row. splits the content alongside each other */
+        justify-content: space-evenly; /* indents on margins and spaces each column of content */
+        margin: 0.21875em;
+    }
+    .left-side, .right-side {
+        margin: 0 0.4375em;
+        width: 130%;
+    }
+    .name-title > h1 {
+        margin-bottom: 0;
+    }
+    .name-title > p {
+        margin: 0;
+        color: #808080;
+    }
+    .contact {
+        background-color: #9ABAD9;
+    }
+    .contact > ul {
+        display: flex;
+        padding: 0;
+    }
+    .contact > ul > li {
+        padding: 0.2em 0.5em;
+    }
+    .contact > ul > li > img {
+        justify-items: baseline;
+        margin-top: 0.15em;
+    }
+    .email {
+        margin-top: 0.30em; /* email logo needed it's own class and styling to get even with the other logos */
+    }
+    .phone {
+        margin-top: 0.16em; /* phone number needed it's own class and styling to get even with the other logos*/
+    }
+    .skill-card {
+        display: flex;
+        align-content: center;
+    }
+    .skill-list {
+        margin: 0.5em 0;
+    }
+    .experience-top h2 {
+        margin-bottom: 0;
+    }
+    .project-row, .professional-row, .academic-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .professional-row, .academic-row > h4 {
+        font-size: 0.875em;
+    }
+    .script {
+        margin: 0;
+    }
+    .honors {
+        margin: 0.5em
+    }
+}
+
 /******** reference of css before refactoring below ********/
 /*!* css for body elements*!*/
 /*body {*/
