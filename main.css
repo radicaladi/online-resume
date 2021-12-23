@@ -20,7 +20,7 @@ li {
 
 /*mobile device responsive design css follows*/
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 428px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@ li {
         align-items: baseline;
     }
     .professional-row, .academic-row > h4{
-        font-size: 14px;
+        font-size: 0.875em;
     }
     .script {
         margin: 0;
@@ -72,6 +72,53 @@ li {
     }
 }
 
+/*transition for screen sizes between mobile but not quite ipad and larger*/
+
+@media screen and (min-width: 429px) and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0.4375em;
+    }
+    .name-title>h1 {
+        margin-bottom: 0;
+    }
+    .name-title>p {
+        margin: 0 1em;
+        color: #808080;
+        font-size: 0.75em;
+    }
+    .contact {
+        background-color: #D8B6A4;
+    }
+    .contact>ul {
+        display: flex;
+        padding: 0;
+    }
+    .contact>ul>li {
+        padding: 0.2em 0.5em;
+    }
+    .skill-card {
+        display: flex;
+        align-content: center;
+    }
+    .project-row, .professional-row, .academic-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .professional-row, .academic-row > h4{
+        font-size: 0.875em;
+    }
+    .script {
+        margin: 0;
+    }
+    .honors {
+        margin: 0;
+    }
+}
+
+/******** reference of css before refactoring below ********/
 /*!* css for body elements*!*/
 /*body {*/
 /*    font-family: 'Open Sans', sans-serif;*/
